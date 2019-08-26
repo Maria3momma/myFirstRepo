@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>iRock - The Virtual Pet Rock</title> 
+    <link rel="stylesheet" href="C:\Users\Student\purpleScorpio\bootstrap1.css">
+    <!--     -->
+    <script type="text/javascript">
+// created a javascript function with the touchRock.
+function touchRock(){
+    //Creat a new variable named userName set it equal to prompt
+    //Asked the user for their name.
+    var userName = prompt ("What is yor name?", "Enter your name here,")
+    //Decision Making? Yes it is
+    //We set up a if statement to decide if the user entered a Name.
+    if(userName){
+        //If user entered Name We alert the user Its nice to meet you.
+        alert("It is good to meet you, " + userName + ".");
+        //Here we change the photo from unhappy to happy
+        document.getElementById("rockImg").src = "/homework/iRock/rock_happy.png";
+    }
+    }
+    </script>
+    </head>
+<body onload="alert('Hello, I am your pet rock')">
+<div style="margin-top:200px; text-align:center">
+
+
+<img id= "rockImg" src="/homework/iRock/rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock();">
+</div>
+
+</body>
+</html>

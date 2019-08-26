@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="/bootStrap1.css">
+    <title>iRock</title>
+    
+    <script type="text/javascript">
+        function touchRock() {
+            var userName = prompt("What is your name?", "Enter your name here.");
+            if (userName) {
+                alert("Blessed to meet you, " + userName + "!");
+                document.getElementById("iRock").src = "rock_happy.png";
+            }
+        }
+        </script>
+</head>
+
+<body onload="alert('How are you doing?');">
+   
+  
+    <div style ="background-color: blueviolet"; margin-top: 200px; text-align:center; class="alert alert-primary">
+    <img id = "iRock" src = "rock.png" alt = "iRock" style="cursor:pointer" margin-top:2px; image-align:center; onclick="touchRock();" />
+    </div>  
+</body>
+</html>
